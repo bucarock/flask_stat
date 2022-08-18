@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Создание статьи!
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1> Добавление статьи </h1><br>
+        <h3> Всё это создано на Python Flask</h3>
+        <form method="post">
+            <input type="text" name="title" id="title" class="container form control" placeholder="Введите название статьи"><br>
+            <textarea name="intro" id="intro" class="container form control" placeholder="Введите анонс"></textarea><br>
+            <textarea name="text" id="text" class="container form control" placeholder="Введите текст"></textarea><br>
+            <textarea name="author" id="author" class="container form control" placeholder="Введите имя"></textarea><br>
+            <input type="submit" class="me-3 btn btn-warning" value="Отправить">
+        </form>
+    </div>
+{% endblock %}
